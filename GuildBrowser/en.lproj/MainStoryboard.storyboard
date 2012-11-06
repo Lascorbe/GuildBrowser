@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2829" systemVersion="12B19" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="QDd-fv-YBp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="QDd-fv-YBp">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1914"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
         <!--Setttings View Controller-->
@@ -9,41 +9,39 @@
             <objects>
                 <viewController id="fTM-Zr-lv3" customClass="SetttingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AKl-Q4-AQE">
-                        <rect key="frame" x="0.0" y="0.0" width="330" height="100"/>
+                        <rect key="frame" x="0.0" y="20" width="330" height="100"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Guild Name" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="bvL-jr-AWA">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Guild Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvL-jr-AWA">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="121" id="ar6-dj-PIs"/>
                                 </constraints>
-                                <nil key="highlightedColor"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                             </label>
-                            <textField translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="enter a guild name" minimumFontSize="17" text="" id="vpu-Ge-RZh">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="enter a guild name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vpu-Ge-RZh">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GxY-K1-KXU"/>
                                     <constraint firstAttribute="width" constant="171" id="w6U-zg-YdF"/>
                                 </constraints>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
-                            <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Realm" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="veV-pD-b9d">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Realm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veV-pD-b9d">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="7g8-Dk-jhj"/>
                                 </constraints>
-                                <nil key="highlightedColor"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                             </label>
-                            <textField translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="enter a realm name" minimumFontSize="17" text="" id="JOS-cO-BGV">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="enter a realm name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JOS-cO-BGV">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ruh-aT-2h5"/>
                                 </constraints>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -87,80 +85,80 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CharacterCell" id="32s-g1-EgM" customClass="CharacterCell">
-                                <rect key="frame" x="20" y="110" width="220" height="113"/>
+                                <rect key="frame" x="10" y="110" width="220" height="113"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="220" height="113"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="255" verticalHuggingPriority="255" image="profile_bg.png" id="fgO-HF-U6K" userLabel="background">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="255" verticalHuggingPriority="255" image="profile_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="fgO-HF-U6K" userLabel="background">
                                             <constraints>
                                                 <constraint firstAttribute="height" priority="1" constant="105" type="user" id="FlW-vv-paN"/>
                                                 <constraint firstAttribute="width" priority="1" constant="215" type="user" id="evG-ws-QMs"/>
                                             </constraints>
                                         </imageView>
-                                        <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Hagrel" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="0dz-f3-KPz">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hagrel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dz-f3-KPz">
                                             <accessibility key="accessibilityConfiguration" hint="CharacterName" label="CharacterName">
                                                 <accessibilityTraits key="traits" none="YES" button="YES" link="YES" staticText="YES"/>
                                             </accessibility>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="IVa-d6-BUF"/>
                                             </constraints>
+                                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                             <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
                                         </label>
-                                        <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="85 Night Elf" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="123" id="SCh-HA-2mi">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="85 Night Elf" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="123" translatesAutoresizingMaskIntoConstraints="NO" id="SCh-HA-2mi">
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="24" id="gqm-Ne-saX"/>
                                             </constraints>
+                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="10"/>
+                                            <color key="textColor" red="1" green="0.62879097869095157" blue="0.032633280930481789" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="textColor" red="1" green="0.62879097869095157" blue="0.032633280930481789" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="10"/>
                                         </label>
-                                        <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="Death Knight" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="123" id="1Kq-5f-ths">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Death Knight" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="123" translatesAutoresizingMaskIntoConstraints="NO" id="1Kq-5f-ths">
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="24" id="PTk-QI-Cdu"/>
                                                 <constraint firstAttribute="width" constant="123" id="gF2-hy-rqw"/>
                                             </constraints>
+                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="10"/>
+                                            <color key="textColor" red="1" green="0.6287909787" blue="0.032633280930000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="textColor" red="1" green="0.6287909787" blue="0.032633280930000001" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="10"/>
                                         </label>
-                                        <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Borean Tundra" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="Lhh-Vi-hM1">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Borean Tundra" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhh-Vi-hM1">
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="123" id="9ST-1S-HIA"/>
                                                 <constraint firstAttribute="height" constant="18" id="aM3-hA-h0T"/>
                                             </constraints>
+                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="10"/>
+                                            <color key="textColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="textColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="10"/>
                                         </label>
-                                        <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="11660" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="HfO-D1-FwC">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="11660" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfO-D1-FwC">
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="18" id="gAh-pH-cbA"/>
                                                 <constraint firstAttribute="width" constant="42" id="rMb-AB-tYN"/>
                                             </constraints>
+                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="10"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="10"/>
                                         </label>
-                                        <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" id="cD8-Gu-8vO" userLabel="thumbNail">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="cD8-Gu-8vO" userLabel="thumbNail">
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="60" id="ecS-yc-ipI"/>
                                             </constraints>
                                         </imageView>
-                                        <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="profile_imageframe.png" id="z3U-1B-9po" userLabel="thumbNail">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="profile_imageframe.png" translatesAutoresizingMaskIntoConstraints="NO" id="z3U-1B-9po" userLabel="thumbNail">
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="brG-SV-YKe"/>
                                             </constraints>
                                         </imageView>
-                                        <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="center" image="profile_shield.png" id="yYq-Wo-4SV">
+                                        <imageView userInteractionEnabled="NO" contentMode="center" image="profile_shield.png" translatesAutoresizingMaskIntoConstraints="NO" id="yYq-Wo-4SV">
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="14" id="um3-Gx-kIZ"/>
                                                 <constraint firstAttribute="height" constant="14" id="wnz-Ng-p87"/>
@@ -209,24 +207,24 @@
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HEADER_CELL" id="7N9-xT-Bys" customClass="HeaderView">
-                            <rect key="frame" x="10" y="0.0" width="1024" height="100"/>
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="100"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="center" image="divider.png" id="Vae-oN-uSJ">
+                                <imageView userInteractionEnabled="NO" contentMode="center" image="divider.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vae-oN-uSJ">
                                     <constraints>
                                         <constraint firstAttribute="width" constant="501" id="u5c-cH-GIX"/>
                                     </constraints>
                                 </imageView>
-                                <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Label" textAlignment="center" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="6Df-EU-p33">
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Df-EU-p33">
                                     <constraints>
                                         <constraint firstAttribute="width" constant="184" id="iUM-Xr-7LJ"/>
                                         <constraint firstAttribute="height" constant="27" id="nOG-G5-yeF"/>
                                     </constraints>
+                                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="24"/>
+                                    <color key="textColor" red="0.30196078430000001" green="0.18039215689999999" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="highlightedColor" red="0.30196078430000001" green="0.18039215689999999" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="shadowColor" red="1" green="0.94457492080000005" blue="0.57771280550000004" alpha="1" colorSpace="calibratedRGB"/>
                                     <size key="shadowOffset" width="0.0" height="1"/>
-                                    <color key="textColor" red="0.30196078430000001" green="0.18039215689999999" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="24"/>
                                 </label>
                             </subviews>
                             <constraints>
@@ -269,39 +267,39 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="Pj7-dE-0JR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pj7-dE-0JR">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="740" id="MBS-8n-F0i"/>
                                     <constraint firstAttribute="height" constant="550" id="gs0-bb-C95"/>
                                 </constraints>
                             </imageView>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" contentMode="scaleToFill" id="8Lg-4W-arP" userLabel="head" customClass="WowItemView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Lg-4W-arP" userLabel="head" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="195" id="8h8-QF-lEd">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="8h8-QF-lEd">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="DKH-B3-5KH"/>
                                             <constraint firstAttribute="width" constant="195" id="jvf-0J-Jlj"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="hZR-Ue-6jj">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZR-Ue-6jj">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="VS3-CW-a2e"/>
                                             <constraint firstAttribute="width" constant="139" id="fLg-ak-EwE"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="MdI-GV-B9W">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdI-GV-B9W">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="OXv-yk-bkQ"/>
                                             <constraint firstAttribute="width" constant="56" id="TAe-db-fD0"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="Xqj-S2-xic">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xqj-S2-xic">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="hO9-mG-uJS"/>
                                         </constraints>
@@ -331,32 +329,32 @@
                                     <outlet property="thumbnail" destination="MdI-GV-B9W" id="5Zz-PR-yGG"/>
                                 </connections>
                             </view>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" tag="1" contentMode="scaleToFill" id="CrQ-e4-iJa" userLabel="neck" customClass="WowItemView">
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CrQ-e4-iJa" userLabel="neck" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="195" id="Drj-61-jRZ">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="Drj-61-jRZ">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="195" id="FMy-2O-T2X"/>
                                             <constraint firstAttribute="height" constant="21" id="suM-tu-Noc"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="O4L-J9-zaW">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4L-J9-zaW">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="139" id="ZDv-Ah-hQ6"/>
                                             <constraint firstAttribute="height" constant="21" id="b2B-3p-3G1"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="ZNV-Qh-jDw">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNV-Qh-jDw">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="5oB-sr-ayY"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="o5o-TM-zyQ">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="o5o-TM-zyQ">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="56" id="8jF-Id-Hfp"/>
                                             <constraint firstAttribute="height" constant="56" type="user" id="KdC-in-ljs"/>
@@ -387,32 +385,32 @@
                                     <outlet property="thumbnail" destination="ZNV-Qh-jDw" id="3Vb-jw-HfL"/>
                                 </connections>
                             </view>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" tag="2" contentMode="scaleToFill" id="3FG-HL-bI1" userLabel="shoulder" customClass="WowItemView">
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3FG-HL-bI1" userLabel="shoulder" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="195" id="AOu-et-TvK">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="AOu-et-TvK">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="195" id="C36-ag-kdI"/>
                                             <constraint firstAttribute="height" constant="21" id="yM7-Rh-7oq"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="J4J-mK-XVr">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4J-mK-XVr">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="JY9-rd-Pyt"/>
                                             <constraint firstAttribute="width" constant="139" id="d1D-o7-3yl"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="4yM-Fr-pjf">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4yM-Fr-pjf">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="VFm-qB-weZ"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="e4L-M4-I4E">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="e4L-M4-I4E">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="8SE-BS-jJK"/>
                                             <constraint firstAttribute="width" constant="56" id="qE9-41-D46"/>
@@ -443,32 +441,32 @@
                                     <outlet property="thumbnail" destination="4yM-Fr-pjf" id="Yr6-vt-DGG"/>
                                 </connections>
                             </view>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" tag="3" contentMode="scaleToFill" id="GNE-Np-Ta1" userLabel="back" customClass="WowItemView">
+                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNE-Np-Ta1" userLabel="back" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="195" id="D6s-ll-E6B">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="D6s-ll-E6B">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="195" id="XY3-Xg-Yww"/>
                                             <constraint firstAttribute="height" constant="21" id="bdS-lu-kSa"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="pNV-lY-iZh">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNV-lY-iZh">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="1sZ-te-AiK"/>
                                             <constraint firstAttribute="width" constant="139" id="f45-4l-6LJ"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="amJ-GC-902">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="amJ-GC-902">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="Cwm-fv-93z"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="1hp-vH-bId">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="1hp-vH-bId">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="56" id="ffP-kg-WGi"/>
                                             <constraint firstAttribute="height" constant="56" type="user" id="ykh-6u-smG"/>
@@ -499,32 +497,32 @@
                                     <outlet property="thumbnail" destination="amJ-GC-902" id="Dqk-hK-agQ"/>
                                 </connections>
                             </view>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" tag="4" contentMode="scaleToFill" id="bCA-nb-PyP" userLabel="chest" customClass="WowItemView">
+                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCA-nb-PyP" userLabel="chest" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="195" id="jHE-lk-7mk">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="jHE-lk-7mk">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="cpA-f8-iRh"/>
                                             <constraint firstAttribute="width" constant="195" id="uvp-TC-W46"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="mpq-fq-xv2">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpq-fq-xv2">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="139" id="Y14-iX-LDJ"/>
                                             <constraint firstAttribute="height" constant="21" id="f9P-hN-MUw"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="Mxj-Hm-87z">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mxj-Hm-87z">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="mCk-cE-c0r"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="heK-6H-rMB">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="heK-6H-rMB">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="nl9-Lc-cu0"/>
                                             <constraint firstAttribute="width" constant="56" id="qlh-Yi-0Vm"/>
@@ -555,32 +553,32 @@
                                     <outlet property="thumbnail" destination="Mxj-Hm-87z" id="WnE-Hu-NdJ"/>
                                 </connections>
                             </view>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" tag="5" contentMode="scaleToFill" id="j3e-uY-FHB" userLabel="shirt" customClass="WowItemView">
+                            <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3e-uY-FHB" userLabel="shirt" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="195" id="E6q-aA-h30">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="E6q-aA-h30">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="195" id="sYH-lq-udv"/>
                                             <constraint firstAttribute="height" constant="21" id="xXK-QG-QPu"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="6TA-bm-ZR3">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TA-bm-ZR3">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="139" id="Koz-PS-n3T"/>
                                             <constraint firstAttribute="height" constant="21" id="hVU-0M-0eI"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="SO7-kv-R6o">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SO7-kv-R6o">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="jSb-5g-cSl"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="fEU-XQ-XiC">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="fEU-XQ-XiC">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="56" id="1DN-Fd-6tI"/>
                                             <constraint firstAttribute="height" constant="56" type="user" id="skm-xN-5zt"/>
@@ -611,32 +609,32 @@
                                     <outlet property="thumbnail" destination="SO7-kv-R6o" id="Hi2-86-mYQ"/>
                                 </connections>
                             </view>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" tag="6" contentMode="scaleToFill" id="P5T-nX-I5U" userLabel="tabard" customClass="WowItemView">
+                            <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5T-nX-I5U" userLabel="tabard" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="195" id="aNl-U7-8Mp">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="aNl-U7-8Mp">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="195" id="DgS-l0-ELb"/>
                                             <constraint firstAttribute="height" constant="21" id="fI8-6T-CRo"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="nl7-ku-O8E">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nl7-ku-O8E">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="84s-Xy-VWf"/>
                                             <constraint firstAttribute="width" constant="139" id="oeo-vQ-mmA"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="UZI-tI-Re5">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZI-tI-Re5">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="UIk-Hg-DTn"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="0xa-Eh-S23">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="0xa-Eh-S23">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="56" id="JPm-2F-Rz0"/>
                                             <constraint firstAttribute="height" constant="56" type="user" id="LRg-21-qfc"/>
@@ -667,33 +665,33 @@
                                     <outlet property="thumbnail" destination="UZI-tI-Re5" id="97r-oj-KqG"/>
                                 </connections>
                             </view>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" tag="7" contentMode="scaleToFill" id="8Rd-hf-vrv" userLabel="wrist" customClass="WowItemView">
+                            <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Rd-hf-vrv" userLabel="wrist" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="195" id="bZl-6r-hVN">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="bZl-6r-hVN">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="hNd-RP-d1G"/>
                                             <constraint firstAttribute="width" constant="195" id="qkq-Eg-KBe"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="LgB-ln-2PU">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgB-ln-2PU">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Ijg-Ib-5yy"/>
                                             <constraint firstAttribute="width" constant="139" id="R0r-e1-yA1"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="Xe7-IM-DLH">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xe7-IM-DLH">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="56" id="Fsc-CE-Oxz"/>
                                             <constraint firstAttribute="height" constant="56" type="user" id="xgT-pd-iPo"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="dZV-Cd-XyQ">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="dZV-Cd-XyQ">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="Qcx-yX-wpd"/>
                                         </constraints>
@@ -723,32 +721,32 @@
                                     <outlet property="thumbnail" destination="Xe7-IM-DLH" id="Vsl-Ji-rF6"/>
                                 </connections>
                             </view>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" tag="8" contentMode="scaleToFill" id="Sgv-ZE-3Xo" userLabel="hands" customClass="WowItemView">
+                            <view tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sgv-ZE-3Xo" userLabel="hands" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="195" id="r9u-en-ZFN">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="r9u-en-ZFN">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="195" id="rL9-K7-ht6"/>
                                             <constraint firstAttribute="height" constant="21" id="wSd-Vv-Ggq"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="fZe-eC-H2A">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZe-eC-H2A">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="139" id="nrW-6T-BwR"/>
                                             <constraint firstAttribute="height" constant="21" id="x5x-VR-0cX"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="845-93-7qM">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="845-93-7qM">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="X1G-VY-9pr"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="os6-D9-O3B">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="os6-D9-O3B">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="ax5-8v-pE9"/>
                                             <constraint firstAttribute="width" constant="56" id="gXL-X8-SZN"/>
@@ -778,33 +776,33 @@
                                     <outlet property="thumbnail" destination="845-93-7qM" id="0B1-9R-jb0"/>
                                 </connections>
                             </view>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" tag="9" contentMode="scaleToFill" id="lL2-6A-g8P" userLabel="waist" customClass="WowItemView">
+                            <view tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lL2-6A-g8P" userLabel="waist" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="195" id="HDf-PD-B7s">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="HDf-PD-B7s">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="h5m-XO-ogV"/>
                                             <constraint firstAttribute="width" constant="195" id="nQV-us-Iqz"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="yGr-JB-ebS">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGr-JB-ebS">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="okq-fg-SI1"/>
                                             <constraint firstAttribute="width" constant="139" id="tUu-M0-aqJ"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="hlI-cm-hHl">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlI-cm-hHl">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="fK6-97-I86"/>
                                             <constraint firstAttribute="width" constant="56" id="uDI-Vb-vzb"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="MAQ-HF-1tN">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="MAQ-HF-1tN">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="3xr-tp-AR5"/>
                                         </constraints>
@@ -833,32 +831,32 @@
                                     <outlet property="thumbnail" destination="hlI-cm-hHl" id="wCv-B6-TT9"/>
                                 </connections>
                             </view>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" tag="10" contentMode="scaleToFill" id="BVw-vW-HtM" userLabel="legs" customClass="WowItemView">
+                            <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVw-vW-HtM" userLabel="legs" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="195" id="trY-zJ-Meb">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="trY-zJ-Meb">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="195" id="0wP-fY-4Ek"/>
                                             <constraint firstAttribute="height" constant="21" id="zDw-PZ-UVQ"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="dcW-Wk-YiH">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcW-Wk-YiH">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="OvV-ho-HNX"/>
                                             <constraint firstAttribute="width" constant="139" id="caR-fs-9Uj"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="FnY-kH-Jbh">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FnY-kH-Jbh">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="xTc-W6-DhR"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="Vi4-wQ-cEb">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vi4-wQ-cEb">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="QDw-0Y-CZr"/>
                                             <constraint firstAttribute="width" constant="56" id="enD-Mi-ObA"/>
@@ -888,32 +886,32 @@
                                     <outlet property="thumbnail" destination="FnY-kH-Jbh" id="W8e-jK-Pma"/>
                                 </connections>
                             </view>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" tag="11" contentMode="scaleToFill" id="p1p-az-vWa" userLabel="feet" customClass="WowItemView">
+                            <view tag="11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1p-az-vWa" userLabel="feet" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="195" id="BB0-uT-2H2">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="BB0-uT-2H2">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="195" id="2zW-nE-4ca"/>
                                             <constraint firstAttribute="height" constant="21" id="ix3-S6-ehN"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="goa-xg-40B">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goa-xg-40B">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="139" id="THU-ak-4NZ"/>
                                             <constraint firstAttribute="height" constant="21" id="TdZ-Ue-LMK"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="2sp-m3-V7K">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sp-m3-V7K">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="rq8-Cz-ZMh"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="7Vs-JN-E90">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Vs-JN-E90">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="9Hn-IX-3vg"/>
                                             <constraint firstAttribute="width" constant="56" id="isX-jX-DFz"/>
@@ -944,33 +942,33 @@
                                     <outlet property="thumbnail" destination="2sp-m3-V7K" id="shs-Tm-tmy"/>
                                 </connections>
                             </view>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" tag="11" contentMode="scaleToFill" id="Ukz-aF-19Z" userLabel="finger1" customClass="WowItemView">
+                            <view tag="11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ukz-aF-19Z" userLabel="finger1" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="195" id="A2n-hH-W35">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="A2n-hH-W35">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="195" id="MWE-60-wxp"/>
                                             <constraint firstAttribute="height" constant="21" id="mU5-pa-Hjx"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="myW-uL-434">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myW-uL-434">
                                         <accessibility key="accessibilityConfiguration" hint="finger1" label="finger1"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="H6C-Iq-MfC"/>
                                             <constraint firstAttribute="width" constant="139" id="muu-QA-kkV"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="BZ1-Ln-G5n">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BZ1-Ln-G5n">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="VUo-A6-mUV"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="ruI-FU-KlP">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="ruI-FU-KlP">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="56" id="4OK-fd-v8D"/>
                                             <constraint firstAttribute="height" constant="56" type="user" id="5Fq-Q5-w5Z"/>
@@ -1000,33 +998,33 @@
                                     <outlet property="thumbnail" destination="BZ1-Ln-G5n" id="nek-E3-SKv"/>
                                 </connections>
                             </view>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" tag="12" contentMode="scaleToFill" id="Y5L-Zm-UTd" userLabel="finger2" customClass="WowItemView">
+                            <view tag="12" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5L-Zm-UTd" userLabel="finger2" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="195" id="yXT-mD-XW1">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="yXT-mD-XW1">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="195" id="c7W-Hw-6ae"/>
                                             <constraint firstAttribute="height" constant="21" id="gVA-AN-790"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="BdR-6a-iv1">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdR-6a-iv1">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="TeT-Nd-pdV"/>
                                             <constraint firstAttribute="width" constant="139" id="dVH-oW-tdc"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="NNN-Pc-v18">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NNN-Pc-v18">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="56" id="lfI-2W-uG7"/>
                                             <constraint firstAttribute="height" constant="56" type="user" id="uIg-gw-Uf1"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="Bgi-lT-C1w">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bgi-lT-C1w">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="iKn-zc-HAg"/>
                                         </constraints>
@@ -1055,33 +1053,33 @@
                                     <outlet property="thumbnail" destination="NNN-Pc-v18" id="N0M-gY-tcF"/>
                                 </connections>
                             </view>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" tag="13" contentMode="scaleToFill" id="HJU-rb-clg" userLabel="trinket1" customClass="WowItemView">
+                            <view tag="13" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJU-rb-clg" userLabel="trinket1" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="195" id="yjy-eg-nLM">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="yjy-eg-nLM">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="195" id="ayG-1X-shR"/>
                                             <constraint firstAttribute="height" constant="21" id="nOm-VL-dJB"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="1FL-h6-DpK">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FL-h6-DpK">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="EbD-W2-gMP"/>
                                             <constraint firstAttribute="width" constant="139" id="GWb-R1-61R"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="pjd-qK-cnt">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pjd-qK-cnt">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="56" id="0hk-7K-ejt"/>
                                             <constraint firstAttribute="height" constant="56" type="user" id="RUo-hF-xo1"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="81O-Ue-vdS">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="81O-Ue-vdS">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="wN7-YV-Ulf"/>
                                         </constraints>
@@ -1110,32 +1108,32 @@
                                     <outlet property="thumbnail" destination="pjd-qK-cnt" id="tfY-19-DvO"/>
                                 </connections>
                             </view>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" tag="14" contentMode="scaleToFill" id="U4v-Qk-ofJ" userLabel="trinket2" customClass="WowItemView">
+                            <view tag="14" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U4v-Qk-ofJ" userLabel="trinket2" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="195" id="1pg-Wy-DBO">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="1pg-Wy-DBO">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="195" id="N42-o5-yBx"/>
                                             <constraint firstAttribute="height" constant="21" id="xQr-hn-YJ0"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="zeW-he-o0K">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeW-he-o0K">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="fjs-aK-gbH"/>
                                             <constraint firstAttribute="width" constant="139" id="svT-eG-5lo"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="7U7-Wd-ozJ">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7U7-Wd-ozJ">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="hIJ-ui-9Yj"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="aLW-uM-Fpq">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="aLW-uM-Fpq">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="Ao0-un-QJ0"/>
                                             <constraint firstAttribute="width" constant="56" id="BZx-M8-1wp"/>
@@ -1165,32 +1163,32 @@
                                     <outlet property="thumbnail" destination="7U7-Wd-ozJ" id="zyC-eL-LOi"/>
                                 </connections>
                             </view>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" contentMode="scaleToFill" id="TSO-tQ-yYR" userLabel="mainhand" customClass="WowItemView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSO-tQ-yYR" userLabel="mainhand" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="175" id="RVL-nM-mmJ">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="175" translatesAutoresizingMaskIntoConstraints="NO" id="RVL-nM-mmJ">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="175" id="ABt-79-L0D"/>
                                             <constraint firstAttribute="height" constant="21" id="qfa-xw-3AS"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="139" id="gmr-tq-Ib0">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="139" translatesAutoresizingMaskIntoConstraints="NO" id="gmr-tq-Ib0">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Pkg-LV-fJd"/>
                                             <constraint firstAttribute="width" constant="139" id="Tpk-kk-VvU"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="vC7-3K-4Vy">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vC7-3K-4Vy">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="c7W-Mx-dW9"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="nJH-SL-vXs">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="nJH-SL-vXs">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="56" id="Sfp-fh-QLr"/>
                                             <constraint firstAttribute="height" constant="56" type="user" id="tFF-4r-DNN"/>
@@ -1220,33 +1218,33 @@
                                     <outlet property="thumbnail" destination="vC7-3K-4Vy" id="6M4-wv-7FU"/>
                                 </connections>
                             </view>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" contentMode="scaleToFill" id="dei-5S-jHn" userLabel="offhand" customClass="WowItemView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dei-5S-jHn" userLabel="offhand" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="195" id="14T-bh-yRb">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="14T-bh-yRb">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="icQ-i9-EVT"/>
                                             <constraint firstAttribute="width" constant="195" id="ike-dv-VJl"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="NS0-ga-gwM">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NS0-ga-gwM">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="139" id="26Z-Vq-Ve5"/>
                                             <constraint firstAttribute="height" constant="21" id="9Li-m4-RkD"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="i1y-g7-Kjw">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i1y-g7-Kjw">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="atA-wX-AcX"/>
                                             <constraint firstAttribute="width" constant="56" id="cQ1-Gc-mQc"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="FK2-7e-b0p">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="FK2-7e-b0p">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="Lnd-Ox-0PB"/>
                                         </constraints>
@@ -1276,32 +1274,32 @@
                                     <outlet property="thumbnail" destination="i1y-g7-Kjw" id="LVJ-54-83o"/>
                                 </connections>
                             </view>
-                            <view translatesAutoresizingMaskIntoConstraints="NO" contentMode="scaleToFill" id="Enj-GJ-LWL" userLabel="ranged" customClass="WowItemView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Enj-GJ-LWL" userLabel="ranged" customClass="WowItemView">
                                 <subviews>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" preferredMaxLayoutWidth="175" id="Pxg-l7-84y">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="175" translatesAutoresizingMaskIntoConstraints="NO" id="Pxg-l7-84y">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Sxw-jG-jUs"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="QP6-gw-SeG">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QP6-gw-SeG">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="7Nt-Qa-sDO"/>
                                             <constraint firstAttribute="width" constant="139" id="lcY-Sr-iNg"/>
                                         </constraints>
-                                        <nil key="highlightedColor"/>
-                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="9LE-74-Lbb">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9LE-74-Lbb">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="56" id="1fB-1z-SvH"/>
                                             <constraint firstAttribute="height" constant="56" type="user" id="KND-p6-Vh1"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" id="vuL-x0-a2R">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detailscreen_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="vuL-x0-a2R">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" type="user" id="K4t-aw-fWH"/>
                                         </constraints>
@@ -1331,7 +1329,7 @@
                                     <outlet property="thumbnail" destination="9LE-74-Lbb" id="bBa-oq-exc"/>
                                 </connections>
                             </view>
-                            <toolbar translatesAutoresizingMaskIntoConstraints="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="VYs-1d-KNa">
+                            <toolbar clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VYs-1d-KNa">
                                 <items>
                                     <barButtonItem title="Close" id="Y19-Qo-Gva">
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1345,11 +1343,11 @@
                                             <rect key="frame" x="152" y="6" width="720" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Label" textAlignment="center" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="RY4-qZ-ycN">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RY4-qZ-ycN">
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="30"/>
+                                                    <color key="textColor" red="0.98913043479999996" green="0.98913043479999996" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1366,30 +1364,30 @@
                                 </items>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </toolbar>
-                            <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Avg Item Level" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="Y3k-h3-3pU">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Avg Item Level" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3k-h3-3pU">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="179" id="B1j-ai-xA9"/>
                                 </constraints>
-                                <nil key="highlightedColor"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
                             </label>
-                            <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" textAlignment="right" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="DL7-gq-7kw">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DL7-gq-7kw">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="51" id="VOs-Id-hbG"/>
                                 </constraints>
-                                <nil key="highlightedColor"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
                             </label>
-                            <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="aGk-1b-Rck">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGk-1b-Rck">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="1RR-DF-CRW"/>
                                     <constraint firstAttribute="width" constant="220" id="qqn-Wz-3mS"/>
                                 </constraints>
-                                <nil key="highlightedColor"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1520,6 +1518,92 @@
         <image name="profile_imageframe.png" width="64" height="64"/>
         <image name="profile_shield.png" width="10" height="10"/>
     </resources>
+    <classes>
+        <class className="CharacterCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CharacterCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="achievementPoints" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="className" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="guildRank" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="levelRace" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="name" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="realm" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="thumbNail" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="CharacterDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CharacterDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="close:"/>
+                <relationship kind="outlet" name="averageItemLevel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="avgItemLevelEquipped" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="backView" candidateClass="WowItemView"/>
+                <relationship kind="outlet" name="characterProfileImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="chestView" candidateClass="WowItemView"/>
+                <relationship kind="outlet" name="feetView" candidateClass="WowItemView"/>
+                <relationship kind="outlet" name="finger1View" candidateClass="WowItemView"/>
+                <relationship kind="outlet" name="finger2View" candidateClass="WowItemView"/>
+                <relationship kind="outlet" name="handsView" candidateClass="WowItemView"/>
+                <relationship kind="outlet" name="headView" candidateClass="WowItemView"/>
+                <relationship kind="outlet" name="legsView" candidateClass="WowItemView"/>
+                <relationship kind="outlet" name="mainHandView" candidateClass="WowItemView"/>
+                <relationship kind="outlet" name="name" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="neckView" candidateClass="WowItemView"/>
+                <relationship kind="outlet" name="offHandView" candidateClass="WowItemView"/>
+                <relationship kind="outlet" name="rangedView" candidateClass="WowItemView"/>
+                <relationship kind="outlet" name="selectedSpec" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="shirtView" candidateClass="WowItemView"/>
+                <relationship kind="outlet" name="shoulderView" candidateClass="WowItemView"/>
+                <relationship kind="outlet" name="tabardView" candidateClass="WowItemView"/>
+                <relationship kind="outlet" name="trinket1View" candidateClass="WowItemView"/>
+                <relationship kind="outlet" name="trinket2View" candidateClass="WowItemView"/>
+                <relationship kind="outlet" name="waistView" candidateClass="WowItemView"/>
+                <relationship kind="outlet" name="wristView" candidateClass="WowItemView"/>
+            </relationships>
+        </class>
+        <class className="CharacterViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CharacterViewController.h"/>
+        </class>
+        <class className="HeaderView" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeaderView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="classTypeName" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SetttingsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SetttingsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="guildName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="realmName" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+        <class className="WowItemView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WowItemView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="itemLevel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="itemName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="thumbnail" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
